@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Acerca de DoftTec</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00A8FF",
+                        "background-light": "#F0F0F0",
+                        "background-dark": "#1A1A1A",
+                        "card-dark": "#2C2C2C",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body>
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden font-display"
+        style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+                <div class="px-4 md:px-10 lg:px-20">
+                    <div
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/20 dark:border-gray-700/50 py-3">
+                        <div class="flex items-center gap-8">
+                            <div class="flex items-center gap-4 text-white">
+                                <div class="size-6 text-primary">
+                                    <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <h2
+                                    class="text-black dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">
+                                    PC Components</h2>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex flex-1 justify-center">
+                            <label class="flex flex-col min-w-40 w-full max-w-lg">
+                                <div class="flex w-full flex-1 items-stretch rounded-lg h-10">
+                                    <div
+                                        class="text-gray-400 dark:text-gray-500 flex border-none bg-gray-200 dark:bg-card-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+                                        <span class="material-symbols-outlined">search</span>
+                                    </div>
+                                    <input
+                                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-black dark:text-white focus:outline-0 focus:ring-0 border-none bg-gray-200 dark:bg-card-dark focus:border-none h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                                        placeholder="Buscar productos..." value="" />
+                                </div>
+                            </label>
+                        </div>
+                        <div class="flex flex-1 justify-end items-center gap-4">
+                            <div class="hidden lg:flex items-center gap-6">
+                                <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="pagina1.html">Productos</a>
+                                <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="pagina2.html">Sobre nosotros</a>
+                                <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="pagina3.html">Soporte</a>
+
+                            </div>
+                            <button
+                                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200 dark:bg-card-dark text-black dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 relative hover:bg-primary/20 transition-colors">
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                                <span
+                                    class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-background-dark text-xs font-bold">2</span>
+                            </button>
+                            <button
+                                class="lg:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200 dark:bg-card-dark text-black dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-primary/20 transition-colors">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="@container">
+                        <div class="@[480px]:p-4">
+                            <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+                                data-alt="A high-performance PC setup with glowing components."
+                                style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgYosU6tzyGeRfd_17lydJDslGml8_pCJZW80haWvEjmETB4kZoZ5yfwmLdmK3BoZzTC1bFya198izOusSUBfHBaBdUcLT3cYeOxejbYvMn8P6GUU9jUVvJ8TIAfyNmrGrMuZKEXQuidaKqXH_mMci6WtBn1zi7pkcgNqRytx3SjzVq3kCyTHKBTKQoIWevWZNYgufZagRMxn3xRe5fj70k7EK_9vDP33i6Q_fRHHfMsAj6Gj8HwJEGUu9wE2pY1NWC6INIET8ikY");'>
+                                <div class="flex flex-col gap-2 text-center">
+                                    <h1
+                                        class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                        Acerca de DoftTec: Pasión por la Tecnología
+                                    </h1>
+                                    <h2
+                                        class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                        Construyendo el futuro de la informática, un componente a la vez.
+                                    </h2>
+                                </div>
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-accent text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                                    <span class="truncate">Explora nuestros productos</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-10 px-4 py-10 @container text-gray-800 dark:text-white">
+                        <div class="flex flex-col gap-4">
+                            <h1
+                                class="tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                Nuestra Misión, Visión e Historia
+                            </h1>
+                            <p
+                                class="text-base font-normal leading-normal max-w-[720px] text-gray-600 dark:text-gray-300">
+                                En DoftTec, nos impulsa una pasión compartida por ampliar los límites de lo que es
+                                posible en la computación. Nuestro viaje comenzó con una idea simple: hacer que los
+                                componentes de PC de alta calidad sean accesibles para todos, desde entusiastas
+                                experimentados hasta constructores primerizos. Hoy, nos erigimos como un testimonio de
+                                ese compromiso, ofreciendo una selección curada de los mejores componentes respaldados
+                                por un soporte experto y una comunidad vibrante.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                            <div
+                                class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-primary/20 p-4 flex-col">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-accent">military_tech</span>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="font-bold leading-tight">Nuestra Misión</h2>
+                                    <p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">
+                                        Potenciar a cada usuario de PC con componentes de primer nivel y un soporte
+                                        inquebrantable.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-primary/20 p-4 flex-col">
+                                <span class="material-symbols-outlined text-primary dark:text-accent">visibility</span>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="font-bold leading-tight">Nuestra Visión</h2>
+                                    <p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">Ser
+                                        el destino más confiable para los entusiastas de las PC en todo el mundo.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-primary/20 p-4 flex-col">
+                                <span class="material-symbols-outlined text-primary dark:text-accent">history</span>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="font-bold leading-tight">Nuestra Historia</h2>
+                                    <p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">
+                                        Fundada en un garaje, ahora una fuerza líder en la industria de componentes de
+                                        PC.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-10 px-4 py-10 @container text-gray-800 dark:text-white">
+                        <div class="flex flex-col gap-4">
+                            <h1
+                                class="tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                Nuestros Valores Fundamentales
+                            </h1>
+                            <p
+                                class="text-base font-normal leading-normal max-w-[720px] text-gray-600 dark:text-gray-300">
+                                Nuestros valores son la brújula que guía cada decisión que tomamos. Definen quiénes
+                                somos y qué representamos como empresa.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                            <div
+                                class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-primary/20 p-4 flex-col">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-accent">verified_user</span>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="font-bold leading-tight">Calidad Garantizada</h2>
+                                    <p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">
+                                        Solo ofrecemos productos que cumplen con nuestros rigurosos estándares de
+                                        rendimiento y fiabilidad.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-primary/20 p-4 flex-col">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-accent">developer_mode</span>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="font-bold leading-tight">Innovación Constante</h2>
+                                    <p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">Nos
+                                        mantenemos a la vanguardia de la tecnología para traerte los últimos y mejores
+                                        componentes.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-primary/20 p-4 flex-col">
+                                <span
+                                    class="material-symbols-outlined text-primary dark:text-accent">support_agent</span>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="font-bold leading-tight">Soporte Experto</h2>
+                                    <p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">
+                                        Nuestro equipo de expertos siempre está listo para ayudarte con cualquier
+                                        pregunta o inquietud que puedas tener.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-primary/20 p-4 flex-col">
+                                <span class="material-symbols-outlined text-primary dark:text-accent">groups</span>
+                                <div class="flex flex-col gap-1">
+                                    <h2 class="font-bold leading-tight">Comunidad Apasionada</h2>
+                                    <p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">
+                                        Creemos en fomentar una comunidad de entusiastas de las PC solidaria e
+                                        inclusiva.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-10 px-4 py-10 @container text-gray-800 dark:text-white">
+                        <div class="flex flex-col gap-4 text-center">
+                            <h1
+                                class="tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                Conoce a Nuestro Equipo
+                            </h1>
+                            <p
+                                class="text-base font-normal leading-normal text-gray-600 dark:text-gray-300 mx-auto max-w-[720px]">
+                                Somos un equipo de apasionados por la tecnología dedicados a ofrecerte la mejor
+                                experiencia posible.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 p-4">
+                            <div class="flex flex-col gap-3 text-center pb-3">
+                                <div class="px-4">
+                                    <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                                        data-alt="Professional headshot of Juan Pérez"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC6W--Ah8-pPRWmjsJd0lxK0oCzCe1HsTvDDo3GiQ9RfbLN8J0Jd3G3u5pARVdpd45H2-ngHzgWezNdUUpRaDcIx57fuAJk2ZxR6D620rH2KTjrjoaqJriW7V6O5tjIHVy4s7tN_qXjb9bXUv2vuF-mCvIYcMm0pC6JYcR2nV5D4J34VkfKKHZvmTkuVfAohOJU_9DZG3vDHHzI2Fxao-FNgmrn7CHgwWCRNqUK4BYF0FCGjmx-O5659OChvaNzKjgnsGJZGOrLKLg");'>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-medium leading-normal text-lg">Juan Pérez</p>
+                                    <p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">
+                                        Fundador y CEO</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 text-center pb-3">
+                                <div class="px-4">
+                                    <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                                        data-alt="Professional headshot of María García"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC56-9_bMQVZgIoDO-CACf1dLwWestNL4GVJEo7OKUn5IURnbAqmTvPRJ-TY5ROY6WvZb-Q-Dps2EXqhtmpNCIuIn1_q9ncB-17Y2yxEn_zdKsh7Uqo0vAvN_Mg9fTtjBQVE7fLlRVLwzdgmhcwFAQykAkwqmjKMQ1RX-q0htgS68tCLh33Fs4g_6ZRA-UOTmMTaUFeT00OwXOWqOB-XMLYXPLZ7S3cuVrv2vwswTfc36H6ebcVNs5CnpNOzYuHxIGBz4dDD7u44zU");'>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-medium leading-normal text-lg">María García</p>
+                                    <p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">Jefa
+                                        de Producto</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 text-center pb-3">
+                                <div class="px-4">
+                                    <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                                        data-alt="Professional headshot of Carlos Rodríguez"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKIs4abWgtlqs6vc0Xn-_mjGbh67HS0kxf7DKm3JmNkmqN-1vgD1pm2qQmHIcV86qnVqS9HcipYj3vSA6L-x790hW4e8GT6JuIQJGbpEFn93Yhdn2-8Nbnohek_ZeAvX91ugVfsnjzbzms51NUgHNrK0F-bndkpnTbY9iDiAMpU9bpc6yORLtXKeb0ECupJAG8EZHHeMaM6700wZEgJXn3fncEBZiOOsEA_Z37xzE1QVDEy83pyrIITZAXtqKGcjtkiDrHnW9R8wI");'>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="font-medium leading-normal text-lg">Carlos Rodríguez</p>
+                                    <p class="text-sm font-normal leading-normal text-gray-500 dark:text-gray-400">
+                                        Ingeniero Principal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="@container">
+                        <div
+                            class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20 text-gray-800 dark:text-white">
+                            <div class="flex flex-col gap-2 text-center">
+                                <h1
+                                    class="tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] mx-auto">
+                                    Únete a la Comunidad DoftTec
+                                </h1>
+                                <p
+                                    class="text-base font-normal leading-normal max-w-[720px] mx-auto text-gray-600 dark:text-gray-300">
+                                    Forma parte de una creciente comunidad de entusiastas de las PC y mantente al día
+                                    con las últimas noticias, lanzamientos de productos y ofertas exclusivas.
+                                </p>
+                            </div>
+                            <div class="flex flex-1 justify-center">
+                                <div class="flex justify-center">
+                                    <button
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-accent text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow">
+                                        <span class="truncate">Únete a la comunidad DoftTec</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="w-full border-t border-gray-200 dark:border-gray-700 py-8 px-4">
+                        <div
+                            class="max-w-[960px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                            <p class="text-sm text-gray-500 dark:text-gray-400">© 2023 DoftTec. Todos los derechos
+                                reservados.</p>
+                            <div class="flex gap-4">
+                                <a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-accent"
+                                    href="#">Facebook</a>
+                                <a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-accent"
+                                    href="#">Twitter</a>
+                                <a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-accent"
+                                    href="#">Instagram</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

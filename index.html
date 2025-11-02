@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Plataforma de Venta de Componentes de PC</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00A8FF",
+                        "background-light": "#F0F0F0",
+                        "background-dark": "#1A1A1A",
+                        "card-dark": "#2C2C2C",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+                <div class="px-4 md:px-10 lg:px-20">
+                    <div
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/20 dark:border-gray-700/50 py-3">
+                        <div class="flex items-center gap-8">
+                            <div class="flex items-center gap-4 text-white">
+                                <div class="size-6 text-primary">
+                                    <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <h2
+                                    class="text-black dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">
+                                    PC Components</h2>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex flex-1 justify-center">
+                            <label class="flex flex-col min-w-40 w-full max-w-lg">
+                                <div class="flex w-full flex-1 items-stretch rounded-lg h-10">
+                                    <div
+                                        class="text-gray-400 dark:text-gray-500 flex border-none bg-gray-200 dark:bg-card-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+                                        <span class="material-symbols-outlined">search</span>
+                                    </div>
+                                    <input
+                                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-black dark:text-white focus:outline-0 focus:ring-0 border-none bg-gray-200 dark:bg-card-dark focus:border-none h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                                        placeholder="Buscar productos..." value="" />
+                                </div>
+                            </label>
+                        </div>
+                        <div class="flex flex-1 justify-end items-center gap-4">
+                            <div class="hidden lg:flex items-center gap-6">
+                                <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="pagina1.html">Productos</a>
+                                <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="pagina2.html">Sobre nosotros</a>
+                                <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="pagina3.html">Soporte</a>
+
+                            </div>
+                            <button
+                                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200 dark:bg-card-dark text-black dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 relative hover:bg-primary/20 transition-colors">
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                                <span
+                                    class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-background-dark text-xs font-bold">2</span>
+                            </button>
+                            <button
+                                class="lg:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200 dark:bg-card-dark text-black dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-primary/20 transition-colors">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1">
+                <div class="px-4 md:px-10 lg:px-20 py-5">
+                    <div class="layout-content-container flex flex-col max-w-full flex-1">
+                        <div class="@container">
+                            <div class="@[480px]:p-4">
+                                <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
+                                    data-alt="Stunning PC setup with glowing components."
+                                    style='background-image: linear-gradient(rgba(26, 26, 46, 0.7) 0%, rgba(26, 26, 46, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSjY5_LEUiIqtpDrxRHG5B5OBrVhyhHRG943166FY7SeQH2Spf_EhF_kBgGsdZ0TzcEuNW4jB_6u7McX4vVXvK9XokgTKITVFy0F2Mtu5SF4ORTZiaj3ENJli1lsUbgPCB4n_Llau2m6mtM6QYqaV_o8ngPSHRDWHs3WNvE7XfXLPmr-80C-GD4eqpONODG6q4xQX-eoWAd1ynnCNfs9U9ErDMTKe6k5bROmG5WMSa0cAGDY1oY98Ozfei9Xm9cjQs_Aafr7xPadQ");'>
+                                    <div class="flex flex-col gap-2 text-center">
+                                        <h1
+                                            class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                            Potencia tu Juego</h1>
+                                        <h2
+                                            class="text-gray-300 text-lg font-normal leading-normal @[480px]:text-xl @[480px]:font-normal @[480px]:leading-normal">
+                                            Las mejores ofertas en componentes de PC.</h2>
+                                    </div>
+                                    <button
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 @[480px]:h-14 @[480px]:px-8 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em] @[480px]:text-lg @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                        <span class="truncate">Explorar Ofertas</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <h2
+                            class="text-black dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-10">
+                            Productos Destacados</h2>
+                        <div class="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-4 p-4">
+                            <!-- Product Card -->
+                            <div
+                                class="flex flex-col gap-3 pb-3 bg-gray-200 dark:bg-card-dark rounded-lg overflow-hidden group hover:scale-105 transition-transform duration-300">
+                                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+                                    data-alt="NVIDIA GeForce RTX 4090 GPU in its packaging."
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBH6JsaqDNC4UGSINfquqYdTRbZT92sGn1n0kaQE5gsYgJpPnK1ai7kKzdMgT9LD-1VWSty_az7hfKRnOGNuvS5fIEr5lVscY6WGYsE1_Z-7dmAnsgi9ajIb0pt5qocV0mYZbRuVopNyaGRBVKenPSPZ6b-oUH-yPzjntjQ4-9amqNrORhNNFWJ_5DCAAOF3ACjgLBMP40WTwTiaU_K5ft7e-WFYgWZEnb1f6KbQBZ4nnzzdbJXHqV_NrxNpIHTtlzcl-_BIECPewU");'>
+                                </div>
+                                <div class="p-4 flex flex-col flex-1">
+                                    <p class="text-black dark:text-white text-lg font-medium leading-normal flex-1">
+                                        NVIDIA GeForce RTX 4090</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">
+                                        $1599</p>
+                                    <button
+                                        class="mt-2 w-full flex items-center justify-center rounded-md h-9 px-3 bg-primary/80 dark:bg-primary text-background-dark text-sm font-bold leading-normal tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                        al carrito</button>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-3 pb-3 bg-gray-200 dark:bg-card-dark rounded-lg overflow-hidden group hover:scale-105 transition-transform duration-300">
+                                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+                                    data-alt="Intel Core i9-13900K processor in its box."
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJRmexm5nsD5AbnItp0ZOoZ6AnbvJpRb44zTe8v8gz6f0tejrWYPpKvCHa-lKiY9jC-NV1I8S9jOWIeoPNJIfYgRr0v5mFm7G20kzQW4mVQVB1WHAxLAsk9e_G5sNEUgtanB2r88VDAi0S3E0h-IF_vRNqFVuCmOoB_4yHuVbtthAzDdOzztF4JW3e4lpOpNx_PXRJ7ianyjknpa4YL2ly4tswo-zKbLLptPsMlxV0KeRXaFcxWT_kItCf9Cc3n3nNeQQHhwm6pxs");'>
+                                </div>
+                                <div class="p-4 flex flex-col flex-1">
+                                    <p class="text-black dark:text-white text-lg font-medium leading-normal flex-1">
+                                        Intel Core i9-13900K</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">
+                                        $589</p>
+                                    <button
+                                        class="mt-2 w-full flex items-center justify-center rounded-md h-9 px-3 bg-primary/80 dark:bg-primary text-background-dark text-sm font-bold leading-normal tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                        al carrito</button>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-3 pb-3 bg-gray-200 dark:bg-card-dark rounded-lg overflow-hidden group hover:scale-105 transition-transform duration-300">
+                                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+                                    data-alt="Samsung 980 Pro 2TB SSD on a dark surface."
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfrg-avAWzKnBx1deWfcreq5cF37ie6_raDI5JEiSVkuJ8iGE2nZuTBIAaePet9ShGhkqatwQdHjUfjYIem-INc81Nc_kdfdyQO63FfvlDGzHn8Oco6Dhj1tk9Fy7EOzJid5h1GVeLuQK1dP3P6HkSSgXYDCS8N1mtgOYtoDsF3bHhRxRWQ_N4lYFpvmpvDjTbLsf3I-uxKxW-awnSuLb8DA7ymemsinQDLPIvnHvF_xTpyqGDyIfMW0DQZtfNeI7G3PMVeKdHcfo");'>
+                                </div>
+                                <div class="p-4 flex flex-col flex-1">
+                                    <p class="text-black dark:text-white text-lg font-medium leading-normal flex-1">
+                                        Samsung 980 Pro 2TB SSD</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">
+                                        $169</p>
+                                    <button
+                                        class="mt-2 w-full flex items-center justify-center rounded-md h-9 px-3 bg-primary/80 dark:bg-primary text-background-dark text-sm font-bold leading-normal tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                        al carrito</button>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-3 pb-3 bg-gray-200 dark:bg-card-dark rounded-lg overflow-hidden group hover:scale-105 transition-transform duration-300">
+                                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+                                    data-alt="Corsair Vengeance DDR5 32GB RAM sticks."
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkKuypIxP5Dm_5mXsm7ADdwQRAAuAwUSAxIebiHLqhssLftuSzJdVGiDCG4QE7V0uC1WTf_2uA9WxJsxs84-sM80owWRvJcu0zVpooHJdk1fr-97nxJfjzQ6JZb4UgJ4FS5BwUb8wGdxwAJzf2bNnieZzkwmGaN6LDCJwJ85ry6tIXHKPITqI-e2TMhYWyZZO7ZzX67mFvktt4JnCxtont3CcWN5jZQwRTNBgyn7pkGNLryAC_BVzZCpLco-wMN0qFn2xqL3A4ZW0");'>
+                                </div>
+                                <div class="p-4 flex flex-col flex-1">
+                                    <p class="text-black dark:text-white text-lg font-medium leading-normal flex-1">
+                                        Corsair Vengeance DDR5 32GB</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal">
+                                        $129</p>
+                                    <button
+                                        class="mt-2 w-full flex items-center justify-center rounded-md h-9 px-3 bg-primary/80 dark:bg-primary text-background-dark text-sm font-bold leading-normal tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                        al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h2
+                            class="text-black dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-10">
+                            Ofertas Especiales</h2>
+                        <div class="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-4 p-4">
+                            <!-- Special Offer Card -->
+                            <div
+                                class="flex flex-col gap-3 pb-3 bg-gray-200 dark:bg-card-dark rounded-lg overflow-hidden group hover:scale-105 transition-transform duration-300 relative">
+                                <div
+                                    class="absolute top-2 right-2 bg-primary text-background-dark px-2 py-1 rounded-md text-xs font-bold">
+                                    OFERTA</div>
+                                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+                                    data-alt="AMD Ryzen 7 5800X processor box."
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdh2wj0NVanH7U_OFDtoBIIFJzf03wk5yjROi_UUMQ660JSWPC_RWrDb4GYa2933CLDa5cK0bw72sH1lquA9P1z22nqLoPBP7ZlpMlQPka339NfoLkiqZ3wbIE4ZKkHgkJFuW3-I7904ENOAfB8xntaK30aAKpB8EfEnmWPxJLOijAN4RMbpzCeTQsABQbFGQ8R4PjetF1xNwzMUmuDJnuYc48TRVKirPqGUqKXdU43Qiw3iEKgDSt0-dUzf5V-AKs8uq661FjUAU");'>
+                                </div>
+                                <div class="p-4 flex flex-col flex-1">
+                                    <p class="text-black dark:text-white text-lg font-medium leading-normal flex-1">AMD
+                                        Ryzen 7 5800X</p>
+                                    <div>
+                                        <p
+                                            class="text-gray-500 dark:text-gray-500 text-sm font-normal leading-normal line-through">
+                                            $449</p>
+                                        <p class="text-primary text-xl font-bold leading-normal">$359</p>
+                                    </div>
+                                    <button
+                                        class="mt-2 w-full flex items-center justify-center rounded-md h-9 px-3 bg-primary/80 dark:bg-primary text-background-dark text-sm font-bold leading-normal tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                        al carrito</button>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-3 pb-3 bg-gray-200 dark:bg-card-dark rounded-lg overflow-hidden group hover:scale-105 transition-transform duration-300 relative">
+                                <div
+                                    class="absolute top-2 right-2 bg-primary text-background-dark px-2 py-1 rounded-md text-xs font-bold">
+                                    OFERTA</div>
+                                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+                                    data-alt="MSI MPG B550 Gaming Plus motherboard."
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6LPjyk9bw0IjyQK4FCHakXNyH5qiH6hucbh97PaXsU-JN75zZIvbkXWyUB9kbLVqPoW66n97i_IF79YgGuTyblLI6u7xXXovtoWPVOSizVOU74-KhcVkF6pz9EqoCq4ElUqPktfeyOCLz1Q6dMufehoWM4h4RGERSaLOpuvA-3e9pdWQFENP502QkXOJOgEP22_x5R8u83Qx824_6EKwm-8_xr5dVQLm9j-U3ubqiKG3Hs97gUmgI962ul-jLi3HSxEIcwV1WiIc");'>
+                                </div>
+                                <div class="p-4 flex flex-col flex-1">
+                                    <p class="text-black dark:text-white text-lg font-medium leading-normal flex-1">MSI
+                                        MPG B550 Gaming Plus</p>
+                                    <div>
+                                        <p
+                                            class="text-gray-500 dark:text-gray-500 text-sm font-normal leading-normal line-through">
+                                            $149</p>
+                                        <p class="text-primary text-xl font-bold leading-normal">$129</p>
+                                    </div>
+                                    <button
+                                        class="mt-2 w-full flex items-center justify-center rounded-md h-9 px-3 bg-primary/80 dark:bg-primary text-background-dark text-sm font-bold leading-normal tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-300">Añadir
+                                        al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        <h2
+                            class="text-black dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-10">
+                            Categorías Populares</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 p-4">
+                            <a class="flex flex-col items-center justify-center gap-2 p-4 bg-gray-200 dark:bg-card-dark rounded-lg text-black dark:text-white hover:bg-primary/20 dark:hover:bg-primary/20 hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-4xl">memory</span>
+                                <span class="font-semibold text-center">Procesadores</span>
+                            </a>
+                            <a class="flex flex-col items-center justify-center gap-2 p-4 bg-gray-200 dark:bg-card-dark rounded-lg text-black dark:text-white hover:bg-primary/20 dark:hover:bg-primary/20 hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-4xl">developer_board</span>
+                                <span class="font-semibold text-center">Tarjetas Gráficas</span>
+                            </a>
+                            <a class="flex flex-col items-center justify-center gap-2 p-4 bg-gray-200 dark:bg-card-dark rounded-lg text-black dark:text-white hover:bg-primary/20 dark:hover:bg-primary/20 hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-4xl">view_in_ar</span>
+                                <span class="font-semibold text-center">Placas Base</span>
+                            </a>
+                            <a class="flex flex-col items-center justify-center gap-2 p-4 bg-gray-200 dark:bg-card-dark rounded-lg text-black dark:text-white hover:bg-primary/20 dark:hover:bg-primary/20 hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-4xl">save</span>
+                                <span class="font-semibold text-center">Almacenamiento</span>
+                            </a>
+                            <a class="flex flex-col items-center justify-center gap-2 p-4 bg-gray-200 dark:bg-card-dark rounded-lg text-black dark:text-white hover:bg-primary/20 dark:hover:bg-primary/20 hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-4xl">straighten</span>
+                                <span class="font-semibold text-center">Memoria RAM</span>
+                            </a>
+                            <a class="flex flex-col items-center justify-center gap-2 p-4 bg-gray-200 dark:bg-card-dark rounded-lg text-black dark:text-white hover:bg-primary/20 dark:hover:bg-primary/20 hover:text-primary dark:hover:text-primary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-4xl">power</span>
+                                <span class="font-semibold text-center">Fuentes de Poder</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="w-full bg-gray-200 dark:bg-card-dark/50 mt-12">
+                <div class="px-4 md:px-10 lg:px-20 py-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div>
+                            <h3 class="text-lg font-bold text-black dark:text-white mb-4">PC Components</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Tu tienda de confianza para los mejores
+                                componentes de PC. Potencia, rendimiento y calidad al mejor precio.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-black dark:text-white mb-4">Enlaces Rápidos</h3>
+                            <ul>
+                                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                                        href="#">Quiénes Somos</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                                        href="#">Preguntas Frecuentes</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                                        href="#">Términos y Condiciones</a></li>
+                                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                                        href="#">Política de Envíos</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-black dark:text-white mb-4">Contacto</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Email: contacto@pccomponents.com</p>
+                            <div class="flex gap-4 mt-4">
+                                <a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                                    href="#">
+                                    <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                        <path
+                                            d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.49-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.72-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.58-.71 0-1.37-.22-1.95-.54v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.94.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.5 20.33 8.79c0-.19 0-.38-.01-.56.84-.6 1.56-1.36 2.14-2.23z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                                    href="#">
+                                    <svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.012 3.584-.07 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.012-3.584.07-4.85c.148-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.441c-3.149 0-3.509.011-4.72.068-2.73.123-3.957 1.349-4.08 4.08-.057 1.21-.067 1.57-.067 4.72s.011 3.509.068 4.72c.123 2.731 1.349 3.957 4.08 4.08 1.21.057 1.57.067 4.72.067s3.509-.011 4.72-.068c2.731-.123 3.957-1.349 4.08-4.08.057-1.21.067-1.57.067-4.72s-.011-3.509-.068-4.72c-.123-2.731-1.349-3.957-4.08-4.08-1.21-.057-1.57-.067-4.72-.067z M12 6.837c-2.841 0-5.163 2.322-5.163 5.163s2.322 5.163 5.163 5.163 5.163-2.322 5.163-5.163-2.322-5.163-5.163-5.163zm0 8.882c-2.053 0-3.719-1.666-3.719-3.719s1.666-3.719 3.719-3.719 3.719 1.666 3.719 3.719-1.666 3.719-3.719 3.719zm4.848-8.232c-.722 0-1.306.584-1.306 1.306s.584 1.306 1.306 1.306 1.306-.584 1.306-1.306-.584-1.306-1.306-1.306z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-gray-300/50 dark:border-gray-700/50 mt-8 pt-4 text-center text-sm text-gray-500 dark:text-gray-400">
+                        <p>© 2024 PC Components. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

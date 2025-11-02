@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Explora Componentes de PC</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        :root {
+            --checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00A8FF",
+                        "background-light": "#F0F0F0",
+                        "background-dark": "#1A1A1A",
+                        "card-dark": "#2C2C2C",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-white">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <div class="px-4 md:px-10 lg:px-20">
+                <div
+                    class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/20 dark:border-gray-700/50 py-3">
+                    <div class="flex items-center gap-8">
+                        <div class="flex items-center gap-4 text-white">
+                            <div class="size-6 text-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-black dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">
+                                PC Components</h2>
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex flex-1 justify-center">
+                        <label class="flex flex-col min-w-40 w-full max-w-lg">
+                            <div class="flex w-full flex-1 items-stretch rounded-lg h-10">
+                                <div
+                                    class="text-gray-400 dark:text-gray-500 flex border-none bg-gray-200 dark:bg-card-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+                                    <span class="material-symbols-outlined">search</span>
+                                </div>
+                                <input
+                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-black dark:text-white focus:outline-0 focus:ring-0 border-none bg-gray-200 dark:bg-card-dark focus:border-none h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                                    placeholder="Buscar productos..." value="" />
+                            </div>
+                        </label>
+                    </div>
+                    <div class="flex flex-1 justify-end items-center gap-4">
+                        <div class="hidden lg:flex items-center gap-6">
+                            <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                href="pagina1.html">Productos</a>
+                            <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                href="pagina2.html">Sobre nosotros</a>
+                            <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                href="pagina3.html">Soporte</a>
+
+                        </div>
+                        <button
+                            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200 dark:bg-card-dark text-black dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 relative hover:bg-primary/20 transition-colors">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                            <span
+                                class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-background-dark text-xs font-bold">2</span>
+                        </button>
+                        <button
+                            class="lg:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200 dark:bg-card-dark text-black dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-primary/20 transition-colors">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="flex flex-1">
+            <aside class="w-80 p-6 border-r border-solid border-white/10 hidden lg:block">
+                <div class="flex flex-col gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-4">Categorías</h3>
+                        <div class="flex flex-col gap-1">
+                            <a class="flex items-center gap-3 px-4 py-2 rounded-lg bg-primary/20 text-primary" href="#">
+                                <span class="material-symbols-outlined">developer_board</span>
+                                <p class="text-sm font-medium leading-normal">Procesadores</p>
+                            </a>
+                            <a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-white/5 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined">view_in_ar</span>
+                                <p class="text-sm font-medium leading-normal">Tarjetas Gráficas</p>
+                            </a>
+                            <a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-white/5 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined">memory</span>
+                                <p class="text-sm font-medium leading-normal">Memorias RAM</p>
+                            </a>
+                            <a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-white/5 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined">save</span>
+                                <p class="text-sm font-medium leading-normal">Almacenamiento</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-4">Filtros</h3>
+                        <div class="flex flex-col gap-6">
+                            <div class="px-0">
+                                <h4 class="text-white font-medium mb-2">Marca</h4>
+                                <label class="flex gap-x-3 py-2 flex-row">
+                                    <input checked=""
+                                        class="h-5 w-5 rounded border-white/30 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-primary focus:outline-none"
+                                        type="checkbox" />
+                                    <p class="text-white/80 text-sm font-normal leading-normal">Brand A</p>
+                                </label>
+                                <label class="flex gap-x-3 py-2 flex-row">
+                                    <input
+                                        class="h-5 w-5 rounded border-white/30 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-primary focus:outline-none"
+                                        type="checkbox" />
+                                    <p class="text-white/80 text-sm font-normal leading-normal">Brand B</p>
+                                </label>
+                                <label class="flex gap-x-3 py-2 flex-row">
+                                    <input
+                                        class="h-5 w-5 rounded border-white/30 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-primary focus:outline-none"
+                                        type="checkbox" />
+                                    <p class="text-white/80 text-sm font-normal leading-normal">Brand C</p>
+                                </label>
+                            </div>
+                            <div class="@container">
+                                <div class="relative flex w-full flex-col items-start justify-between gap-3 p-0">
+                                    <p class="text-white text-base font-medium leading-normal w-full shrink-[3]">Rango
+                                        de Precio</p>
+                                    <div class="flex h-[38px] w-full pt-1.5">
+                                        <div class="flex h-1.5 w-full rounded-sm bg-white/20 pl-[10%] pr-[30%]">
+                                            <div class="relative">
+                                                <div class="absolute -left-3 -top-2 flex flex-col items-center gap-1">
+                                                    <div
+                                                        class="size-5 rounded-full bg-primary ring-2 ring-background-dark">
+                                                    </div>
+                                                    <p class="text-white text-xs font-normal leading-normal mt-1">$100
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="h-1.5 flex-1 rounded-sm bg-primary"></div>
+                                            <div class="relative">
+                                                <div class="absolute -right-3 -top-2 flex flex-col items-center gap-1">
+                                                    <div
+                                                        class="size-5 rounded-full bg-primary ring-2 ring-background-dark">
+                                                    </div>
+                                                    <p class="text-white text-xs font-normal leading-normal mt-1">$700
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <details class="flex flex-col border-t border-t-white/10 py-2 group" open="">
+                                    <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                                        <p class="text-white text-sm font-medium leading-normal">Especificaciones</p>
+                                        <span
+                                            class="material-symbols-outlined text-white group-open:rotate-180 transition-transform">expand_more</span>
+                                    </summary>
+                                    <div class="flex flex-col gap-2 pt-2">
+                                        <label class="flex gap-x-3 flex-row items-center">
+                                            <input
+                                                class="h-5 w-5 rounded border-white/30 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-primary focus:outline-none"
+                                                type="checkbox" />
+                                            <p class="text-white/80 text-sm font-normal leading-normal">8 Núcleos</p>
+                                        </label>
+                                        <label class="flex gap-x-3 flex-row items-center">
+                                            <input
+                                                class="h-5 w-5 rounded border-white/30 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-primary focus:outline-none"
+                                                type="checkbox" />
+                                            <p class="text-white/80 text-sm font-normal leading-normal">16 Núcleos</p>
+                                        </label>
+                                        <label class="flex gap-x-3 flex-row items-center">
+                                            <input
+                                                class="h-5 w-5 rounded border-white/30 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-primary focus:outline-none"
+                                                type="checkbox" />
+                                            <p class="text-white/80 text-sm font-normal leading-normal">3.5 GHz+</p>
+                                        </label>
+                                    </div>
+                                </details>
+                                <details class="flex flex-col border-t border-t-white/10 py-2 group">
+                                    <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                                        <p class="text-white text-sm font-medium leading-normal">Compatibilidad</p>
+                                        <span
+                                            class="material-symbols-outlined text-white group-open:rotate-180 transition-transform">expand_more</span>
+                                    </summary>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <button
+                            class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                            <span class="truncate">Aplicar Filtros</span>
+                        </button>
+                        <button
+                            class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white/10 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-white/20 transition-colors">
+                            <span class="truncate">Limpiar Filtros</span>
+                        </button>
+                    </div>
+                </div>
+            </aside>
+            <main class="flex-1 p-6 lg:p-10">
+                <div class="flex flex-col gap-8">
+                    <div>
+                        <h1 class="text-4xl font-bold text-white">Explora Procesadores</h1>
+                        <div class="flex justify-between items-center mt-4">
+                            <p class="text-white/70">Mostrando 24 productos</p>
+                            <div class="flex items-center gap-2">
+                                <span class="text-sm text-white/70">Ordenar por:</span>
+                                <select
+                                    class="form-select bg-white/5 border-none rounded-lg text-white focus:ring-primary focus:border-primary text-sm">
+                                    <option>Popularidad</option>
+                                    <option>Precio: Ascendente</option>
+                                    <option>Precio: Descendente</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
+                        <div
+                            class="bg-card-dark rounded-xl overflow-hidden flex flex-col group transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-105">
+                            <div class="relative">
+                                <img class="w-full h-48 object-cover"
+                                    data-alt="Un procesador de computadora Intel Core i9 sobre un fondo oscuro."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuABgrSvVY_Vleje9GzRQCpSpfaVQijS9gWxtFadksYmtDKlfVhEGuKT8HdeLqjuHrc4yt358WEFNWZeQoDxIfDnTQ2I8xqP9WNvD19D2RmSVUyTV43mMcKDPQ_Gf1fkif5nfEUQoV9P8avy78PeackwDMoEfVFzQ4rI05qvXYslHCc088JfXhjE3-UODYOnwRjfK4o5e34Ki92pBtxLFXJy83iUddc4GIjTlEEJDkaZT17kW9pOoGLLUaBRds0dOKTdrH9O1bxohaA" />
+                                <button
+                                    class="absolute top-3 right-3 bg-black/50 p-2 rounded-full text-white hover:text-primary transition-colors">
+                                    <span class="material-symbols-outlined">favorite_border</span>
+                                </button>
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h3 class="text-lg font-bold text-white mb-2">Intel Core i9-13900K</h3>
+                                <p class="text-xl font-semibold text-primary mb-3">$589.00</p>
+                                <div class="flex items-center gap-1 text-amber-400 mb-4">
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star_half</span>
+                                </div>
+                                <button
+                                    class="mt-auto w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                    <span class="truncate">Añadir al carrito</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-card-dark rounded-xl overflow-hidden flex flex-col group transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-105">
+                            <div class="relative">
+                                <img class="w-full h-48 object-cover"
+                                    data-alt="Un procesador AMD Ryzen con un pin en el centro, sobre una superficie oscura."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBviRAqAeTuqYkuJ492rF-pl_m5POLoYWpZ5dk2Yicx82_g01QgkWQogOrECNiMzbKMr9mlgpCyiqRxq7IftKqLwVbYhaKpZ_KI9C-d9WsW8Hswf2RxzPe27u7TQR5e6d2wMxMpYLD4A12AdOurH_lkeP7T--fKIWielqLRCWs0BjFZEa6mLJsPjzmLESaA-4xQj7no8Um0qGOdroxLrWRW2upmUAaTvkwHY1wfT0vf2BjF4NmT3fmIK-Bz-MMc6ue8TLXDewj5AjI" />
+                                <button
+                                    class="absolute top-3 right-3 bg-black/50 p-2 rounded-full text-white hover:text-primary transition-colors">
+                                    <span class="material-symbols-outlined">favorite_border</span>
+                                </button>
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h3 class="text-lg font-bold text-white mb-2">AMD Ryzen 9 7950X</h3>
+                                <p class="text-xl font-semibold text-primary mb-3">$549.00</p>
+                                <div class="flex items-center gap-1 text-amber-400 mb-4">
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                </div>
+                                <button
+                                    class="mt-auto w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                    <span class="truncate">Añadir al carrito</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-card-dark rounded-xl overflow-hidden flex flex-col group transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-105">
+                            <div class="relative">
+                                <img class="w-full h-48 object-cover"
+                                    data-alt="Vista de cerca de un chip de procesador Intel."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRf0LonLejVgV-WZszGy9mAgQLR3fmPIfLzb7REExsyr695RTEBrwK0SaHdfF1Q4QUn4XwHbEI9HfK4IPGkE1_cI_JvLuPbE1WnByoZV8nvM2TbpvehNZZnji3T_ab1qr_rFvrb4lTPe24ENS6ZnlA7ggGhy1EiruvmjhpaeRgp5FJaCDNA4V_hJbPzTqLP67nFv42POYuwT8sCA7dsGsu4sNjw1m3yOeySJ1u4JcioBZq9FCJRuQCO-ySIygOahJRDnhAABZa8S0" />
+                                <button
+                                    class="absolute top-3 right-3 bg-black/50 p-2 rounded-full text-white hover:text-primary transition-colors">
+                                    <span class="material-symbols-outlined">favorite_border</span>
+                                </button>
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h3 class="text-lg font-bold text-white mb-2">Intel Core i7-13700K</h3>
+                                <p class="text-xl font-semibold text-primary mb-3">$409.00</p>
+                                <div class="flex items-center gap-1 text-amber-400 mb-4">
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star_half</span>
+                                </div>
+                                <button
+                                    class="mt-auto w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                    <span class="truncate">Añadir al carrito</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-card-dark rounded-xl overflow-hidden flex flex-col group transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-105">
+                            <div class="relative">
+                                <img class="w-full h-48 object-cover"
+                                    data-alt="Procesador AMD Ryzen sobre una motherboard con reflejos de luz."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGRI9SafZ_ahCPKpkkoMcUDSxrp_bgpO3aurVaVajXF9IHa2LoKAziz_oKRSBHdqMve1iddfe0q0h5TWfUQ2LBKkRLdBYUdo1pM3XQH2MYStPDRkISC6EYRqUdtZ5vRFosw0DiJuVaf5JHXPAd6m4n9chvmVGBtN2ZSheZVB3PX8hIfMu5HTPzLmHEMwqyhI5JIbGsGsqIwRtEKmj1iDkhmfffOD-Ewn_XiYPBU-LtR2uYO9J3o96RSU3KNfXp8A5etTIBxhs3ikA" />
+                                <button
+                                    class="absolute top-3 right-3 bg-black/50 p-2 rounded-full text-white hover:text-primary transition-colors">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </button>
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h3 class="text-lg font-bold text-white mb-2">AMD Ryzen 7 7800X3D</h3>
+                                <p class="text-xl font-semibold text-primary mb-3">$449.00</p>
+                                <div class="flex items-center gap-1 text-amber-400 mb-4">
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                </div>
+                                <button
+                                    class="mt-auto w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                    <span class="truncate">Añadir al carrito</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-card-dark rounded-xl overflow-hidden flex flex-col group transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-105">
+                            <div class="relative">
+                                <img class="w-full h-48 object-cover"
+                                    data-alt="Chip de computadora con el logo de Intel."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHrmyA2G6JOfraU84K5W3Mrv24Vl9ZGngKADxiwfK31Vsn6PpL_GM0F6SuWb9_KpBcAyZ6wyF1cOOhvVUExcExhjyWWz0KjCGp__3LUmQ7HdMTR1HKlF39oV54uDiyK9JZT48I-OOKUsXNdj7FjpFLbPdsCeJnTNITtTI9xd1As4p7X8yr5VLZeiqpLtTZfgqBXWlwlQ9wml7PNRJZq4OMXRdB2k_78psLVR9KG4CAxsoibQPoxGQ6ckmDogmwaJ18USorwqG6zmE" />
+                                <button
+                                    class="absolute top-3 right-3 bg-black/50 p-2 rounded-full text-white hover:text-primary transition-colors">
+                                    <span class="material-symbols-outlined">favorite_border</span>
+                                </button>
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h3 class="text-lg font-bold text-white mb-2">Intel Core i5-13600K</h3>
+                                <p class="text-xl font-semibold text-primary mb-3">$319.00</p>
+                                <div class="flex items-center gap-1 text-amber-400 mb-4">
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star_half</span>
+                                </div>
+                                <button
+                                    class="mt-auto w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                    <span class="truncate">Añadir al carrito</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-card-dark rounded-xl overflow-hidden flex flex-col group transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-105">
+                            <div class="relative">
+                                <img class="w-full h-48 object-cover"
+                                    data-alt="Procesador AMD Ryzen en su empaque con el logo visible."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-7PHW3bwwJAW2TIpKeKAd2JrKb-de9cT_b6paV8fS-tWm8Hn6kH-QsKz_Ncyn1m0VF44WicLng4CMgoJ4vhxrGhy73052I6lmBItNXzNHw_uQS8zvDake9opIdU2mV9y4Uq75dImfqpM3XQlg1MZL4B9KJDD9DKhFT2GY0M4WH-4hVEdYDT7s8PVcPkOuqYSTSH7bQbl3Xf9Tfu4QDu7e70tFIsb7Qg0Zb81QT67btoLwbZ23dHUfrmNS0mJXNAugEadFJdvaqVA" />
+                                <button
+                                    class="absolute top-3 right-3 bg-black/50 p-2 rounded-full text-white hover:text-primary transition-colors">
+                                    <span class="material-symbols-outlined">favorite_border</span>
+                                </button>
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h3 class="text-lg font-bold text-white mb-2">AMD Ryzen 5 7600X</h3>
+                                <p class="text-xl font-semibold text-primary mb-3">$249.00</p>
+                                <div class="flex items-center gap-1 text-amber-400 mb-4">
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star</span>
+                                    <span class="material-symbols-outlined text-base">star_border</span>
+                                </div>
+                                <button
+                                    class="mt-auto w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                    <span class="truncate">Añadir al carrito</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-2 mt-8">
+                        <button
+                            class="flex items-center justify-center size-10 rounded-lg bg-white/10 text-white hover:bg-primary transition-colors">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                        <button
+                            class="flex items-center justify-center size-10 rounded-lg bg-primary text-white">1</button>
+                        <button
+                            class="flex items-center justify-center size-10 rounded-lg bg-white/10 text-white hover:bg-primary transition-colors">2</button>
+                        <button
+                            class="flex items-center justify-center size-10 rounded-lg bg-white/10 text-white hover:bg-primary transition-colors">3</button>
+                        <span class="text-white/50">...</span>
+                        <button
+                            class="flex items-center justify-center size-10 rounded-lg bg-white/10 text-white hover:bg-primary transition-colors">10</button>
+                        <button
+                            class="flex items-center justify-center size-10 rounded-lg bg-white/10 text-white hover:bg-primary transition-colors">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
