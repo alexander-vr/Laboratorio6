@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Preguntas Frecuentes - PC Components</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00A8FF",
+                        "background-light": "#F0F0F0",
+                        "background-dark": "#1A1A1A",
+                        "card-dark": "#2C2C2C",
+                    },
+                    fontFamily: {
+                        display: ["Inter"],
+                    },
+                    borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-display">
+    <div
+        class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+                <div class="px-4 md:px-10 lg:px-20">
+                    <div
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/20 dark:border-gray-700/50 py-3">
+                        <div class="flex items-center gap-8">
+                            <div class="flex items-center gap-4 text-white">
+                                <div class="size-6 text-primary">
+                                    <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <h2
+                                    class="text-black dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">
+                                    PC Components</h2>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex flex-1 justify-center">
+                            <label class="flex flex-col min-w-40 w-full max-w-lg">
+                                <div class="flex w-full flex-1 items-stretch rounded-lg h-10">
+                                    <div
+                                        class="text-gray-400 dark:text-gray-500 flex border-none bg-gray-200 dark:bg-card-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+                                        <span class="material-symbols-outlined">search</span>
+                                    </div>
+                                    <input
+                                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-black dark:text-white focus:outline-0 focus:ring-0 border-none bg-gray-200 dark:bg-card-dark focus:border-none h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                                        placeholder="Buscar productos..." value="" />
+                                </div>
+                            </label>
+                        </div>
+                        <div class="flex flex-1 justify-end items-center gap-4">
+                            <div class="hidden lg:flex items-center gap-6">
+                                <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="pagina1.html">Productos</a>
+                                <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="pagina2.html">Sobre nosotros</a>
+                                <a class="text-black dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="pagina3.html">Soporte</a>
+
+                            </div>
+                            <button
+                                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200 dark:bg-card-dark text-black dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 relative hover:bg-primary/20 transition-colors">
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                                <span
+                                    class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-background-dark text-xs font-bold">2</span>
+                            </button>
+                            <button
+                                class="lg:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200 dark:bg-card-dark text-black dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 hover:bg-primary/20 transition-colors">
+                                <span class="material-symbols-outlined">menu</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="flex flex-1 justify-center py-10 sm:py-16">
+                <div class="flex w-full max-w-4xl flex-col gap-8 px-4 sm:gap-12">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                        <div class="flex flex-col gap-3">
+                            <p
+                                class="text-4xl font-black leading-tight tracking-[-0.033em] text-slate-900 dark:text-slate-50 sm:text-5xl">
+                                Preguntas Frecuentes</p>
+                            <p class="text-base font-normal leading-normal text-slate-600 dark:text-slate-400">Encuentra
+                                respuestas a tus preguntas de forma rápida y sencilla.</p>
+                        </div>
+                    </div>
+                    <div class="px-0 py-3">
+                        <label
+                            class="flex h-14 w-full flex-col rounded-lg border border-slate-300 bg-white shadow-sm focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/50 dark:border-slate-700 dark:bg-slate-900">
+                            <div class="flex h-full w-full flex-1 items-stretch rounded-lg">
+                                <div class="flex items-center justify-center pl-4 text-slate-500 dark:text-slate-400">
+                                    <span class="material-symbols-outlined text-2xl"> search </span>
+                                </div>
+                                <input
+                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border-none bg-transparent px-3 text-base font-normal leading-normal text-slate-900 placeholder:text-slate-500 focus:outline-0 focus:ring-0 dark:text-slate-50 dark:placeholder:text-slate-400"
+                                    placeholder="Busca por palabra clave (ej. 'garantía', 'plazo de entrega')"
+                                    value="" />
+                            </div>
+                        </label>
+                    </div>
+                    <div class="flex flex-col gap-8">
+                        <div class="pb-3">
+                            <div class="flex gap-4 sm:gap-8 border-b border-slate-200 dark:border-slate-800">
+                                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary pb-3 pt-2"
+                                    href="#">
+                                    <p class="text-sm font-bold leading-normal tracking-[0.015em] text-primary">Pedidos
+                                    </p>
+                                </a>
+                                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent pb-3 pt-2 text-slate-500 dark:text-slate-400"
+                                    href="#">
+                                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Envíos</p>
+                                </a>
+                                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent pb-3 pt-2 text-slate-500 dark:text-slate-400"
+                                    href="#">
+                                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Devoluciones</p>
+                                </a>
+                                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent pb-3 pt-2 text-slate-500 dark:text-slate-400"
+                                    href="#">
+                                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Productos</p>
+                                </a>
+                                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent pb-3 pt-2 text-slate-500 dark:text-slate-400"
+                                    href="#">
+                                    <p class="text-sm font-bold leading-normal tracking-[0.015em]">Cuenta</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <details class="group flex flex-col border-t border-slate-200 py-2 dark:border-slate-800"
+                                open="">
+                                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-3">
+                                    <p class="text-base font-medium leading-normal text-slate-800 dark:text-slate-200">
+                                        ¿Cómo puedo seguir mi pedido?</p>
+                                    <span
+                                        class="material-symbols-outlined text-slate-600 transition-transform duration-200 group-open:rotate-180 dark:text-slate-400">
+                                        expand_more </span>
+                                </summary>
+                                <p class="pb-2 text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-400">
+                                    Una vez que tu pedido haya sido enviado, recibirás un correo electrónico de
+                                    confirmación con un número de seguimiento. Puedes usar este número en el sitio web
+                                    del transportista para ver el estado actual de tu entrega.</p>
+                            </details>
+                            <details class="group flex flex-col border-t border-slate-200 py-2 dark:border-slate-800">
+                                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-3">
+                                    <p class="text-base font-medium leading-normal text-slate-800 dark:text-slate-200">
+                                        ¿Qué métodos de pago aceptan?</p>
+                                    <span
+                                        class="material-symbols-outlined text-slate-600 transition-transform duration-200 group-open:rotate-180 dark:text-slate-400">
+                                        expand_more </span>
+                                </summary>
+                                <p class="pb-2 text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-400">
+                                    Aceptamos una amplia variedad de métodos de pago, incluyendo tarjetas de crédito y
+                                    débito (Visa, MasterCard, American Express), PayPal, y transferencia bancaria. Todos
+                                    los pagos son procesados de forma segura.</p>
+                            </details>
+                            <details class="group flex flex-col border-t border-slate-200 py-2 dark:border-slate-800">
+                                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-3">
+                                    <p class="text-base font-medium leading-normal text-slate-800 dark:text-slate-200">
+                                        ¿Puedo cancelar o modificar mi pedido?</p>
+                                    <span
+                                        class="material-symbols-outlined text-slate-600 transition-transform duration-200 group-open:rotate-180 dark:text-slate-400">
+                                        expand_more </span>
+                                </summary>
+                                <p class="pb-2 text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-400">
+                                    Si necesitas cancelar o modificar tu pedido, por favor contacta a nuestro equipo de
+                                    soporte lo antes posible. Haremos todo lo posible para ayudarte, pero ten en cuenta
+                                    que si el pedido ya ha sido procesado o enviado, no podremos realizar cambios.</p>
+                            </details>
+                            <details class="group flex flex-col border-t border-slate-200 py-2 dark:border-slate-800">
+                                <summary class="flex cursor-pointer list-none items-center justify-between gap-6 py-3">
+                                    <p class="text-base font-medium leading-normal text-slate-800 dark:text-slate-200">
+                                        ¿Cómo solicito una factura?</p>
+                                    <span
+                                        class="material-symbols-outlined text-slate-600 transition-transform duration-200 group-open:rotate-180 dark:text-slate-400">
+                                        expand_more </span>
+                                </summary>
+                                <p class="pb-2 text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-400">
+                                    La factura de tu pedido se genera automáticamente y se envía al correo electrónico
+                                    que utilizaste para la compra. También puedes descargarla desde la sección "Mis
+                                    Pedidos" en tu cuenta de usuario.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-8 flex flex-col items-center justify-center gap-4 rounded-xl bg-slate-100 p-8 text-center dark:bg-slate-900">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-50">¿No encuentras lo que buscas?
+                        </h3>
+                        <p class="max-w-md text-base text-slate-600 dark:text-slate-400">Nuestro equipo de soporte está
+                            listo para ayudarte con cualquier otra consulta que puedas tener.</p>
+                        <button
+                            class="mt-2 flex h-11 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-sm font-bold leading-normal tracking-[0.015em] text-white shadow-md transition-all hover:bg-primary/90">
+                            <span class="truncate">Contactar con Soporte</span>
+                        </button>
+                                  
+                    </div>
+                </div>
+            </main>
+            <footer
+                class="flex w-full justify-center border-t border-slate-200 bg-white py-10 dark:border-slate-800 dark:bg-slate-950">
+                <div
+                    class="flex w-full max-w-6xl flex-col items-center justify-between gap-8 px-4 md:flex-row md:items-start">
+                    <div class="flex flex-col items-center gap-4 md:items-start">
+                        <div class="flex items-center gap-2 text-slate-800 dark:text-slate-200">
+                            <div class="size-5 text-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-base font-bold leading-tight">PC Components</h2>
+                        </div>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">© 2024 PC Components Inc. Todos los
+                            derechos reservados.</p>
+                    </div>
+                    <div class="flex gap-12 text-center md:text-left">
+                        <div class="flex flex-col gap-3">
+                            <h4 class="font-semibold text-slate-800 dark:text-slate-200">Productos</h4>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">Tarjetas Gráficas</a>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">Procesadores</a>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">Placas Base</a>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">Memoria RAM</a>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h4 class="font-semibold text-slate-800 dark:text-slate-200">Soporte</h4>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">Contacto</a>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">FAQ</a>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">Garantías</a>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">Devoluciones</a>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h4 class="font-semibold text-slate-800 dark:text-slate-200">Empresa</h4>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">Sobre Nosotros</a>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">Términos de Servicio</a>
+                            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+                                href="#">Política de Privacidad</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
